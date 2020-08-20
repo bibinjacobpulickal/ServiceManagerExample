@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		6BF2887D241246AD00F6E7DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF2887C241246AD00F6E7DF /* Assets.xcassets */; };
 		6BF28880241246AD00F6E7DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF2887F241246AD00F6E7DF /* Preview Assets.xcassets */; };
 		6BF28883241246AD00F6E7DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF28881241246AD00F6E7DF /* LaunchScreen.storyboard */; };
+		EF415C5324EEA06000CC5CBA /* ServiceManager in Frameworks */ = {isa = PBXBuildFile; productRef = EF415C5224EEA06000CC5CBA /* ServiceManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF415C5324EEA06000CC5CBA /* ServiceManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = ServiceManagerExample;
+			packageProductDependencies = (
+				EF415C5224EEA06000CC5CBA /* ServiceManager */,
+			);
 			productName = ServiceManagerExample;
 			productReference = 6BF28873241246AC00F6E7DF /* ServiceManagerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 6BF2886A241246AC00F6E7DF;
+			packageReferences = (
+				EF415C5124EEA06000CC5CBA /* XCRemoteSwiftPackageReference "ServiceManager" */,
+			);
 			productRefGroup = 6BF28874241246AC00F6E7DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF415C5124EEA06000CC5CBA /* XCRemoteSwiftPackageReference "ServiceManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:bibinjacobpulickal/ServiceManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF415C5224EEA06000CC5CBA /* ServiceManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF415C5124EEA06000CC5CBA /* XCRemoteSwiftPackageReference "ServiceManager" */;
+			productName = ServiceManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BF2886B241246AC00F6E7DF /* Project object */;
 }
